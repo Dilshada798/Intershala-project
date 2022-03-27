@@ -1,0 +1,132 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar {
+    border-bottom: 1px solid rgb(207, 202, 202);
+    background-color: snow;
+    height: 70px;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    box-shadow: 0 0 10px rgba(121, 142, 160, 0.164);
+}
+.navbar .logo {
+    margin-left: 20px;
+}
+.navbar .menu {
+    position: relative;
+    grid-column: 3/6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: none;
+    /* width: auto; */
+    height: auto;
+    transform: translate(0, -50%);
+    margin-top: 0;
+}
+.navbar .menu li {
+    list-style: none;
+    text-align: center;
+}
+.navbar .menu li img {
+    height: 25px;
+}
+.header-icon {
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #333;
+    height: 40px;
+    width: 45px;
+}
+.header-icon img {
+    height: 25px;
+}
+.header-text p {
+    margin:5vh 0 0 80px;
+    font-size: 2rem;
+}
+.navbar .menu a, .login {
+    text-decoration: none;
+    color: #333;
+    margin: 10px;
+}
+.navbar .logins {
+    display: none;
+}
+@media only screen and (min-width: 600px) {
+    .navbar .logins {
+        margin-right: 10px;
+        display: block;
+        grid-column: 9/10;
+    }
+    .navbar .menu {
+        position: relative;
+        grid-column: 4/6;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        transform: none;
+        width: auto;
+        height: auto;
+        top: 20%;
+        transform: translate(0, -50%);
+        margin-top: 0;
+    }
+}
+.movietext i{
+    color: #fff;
+    margin-left: 0px;
+    font-size: 0px 
+}
+.movietext:hover i{
+    position: absolute;
+    color: #fff;
+    margin-left: 0px;
+    font-size: 30px;
+    right: 20px;
+    top: 50px; 
+}
+.moviebox {
+    padding: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card1 img{
+    border-radius: 30px 0px 0px 30px;
+}
+.card2 img{
+    border-radius: 0px 30px 30px 0px;
+}
+.moviecard img{
+    opacity: 0.8;
+}
+.moviecard {
+    position: relative;
+    width: 60%;
+    height: 250px;
+    border-radius: 4px;
+    transition: width 0.2s;
+}
+.thumb, .movietext {
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+}
+.movietext {
+    color: white;
+    font-size: larger;
+}
+.moviecard:hover,
+.moviecard:hover .movietext {
+    width: 100%;
+}
